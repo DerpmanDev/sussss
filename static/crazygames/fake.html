@@ -1,0 +1,15 @@
+<head>
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <script src="https://dogeunblocker.derpkiddo.repl.co/uv/uv.bundle.js"></script>
+    <script src="https://dogeunblocker.derpkiddo.repl.co/uv/uv.config.js"></script>
+    <script src="https://dogeunblocker.derpkiddo.repl.co/index.js"></script>
+    <script>
+        window.navigator.serviceWorker.register('https://dogeunblocker.derpkiddo.repl.co/sw.js', {
+            scope: __uv$config.prefix
+        }).then(() => {
+            location.href=__uv$config.prefix + __uv$config.encodeUrl('https://crazygames.com');
+        });
+    </script>
+</body>
